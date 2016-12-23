@@ -77,10 +77,14 @@
 		   <p class="location">Contact</p>
 		   	<img src="images/bottom-banner-black.png" class="img-responsive location-banner">
 		   </div>
-	   <div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
-			    <h3 id="form-title">Reservation? Comments? Let us know!</h3>
-	<form id="contact-form" method="post" action="../php/contact.php" role="form">
+           </div>
+           
+<div class="container">
+        
+       <div class="row" id="reservation-restaurant">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h3 id="form-title">Reservation? <a href="tel:+34915225737"> +34 915 225 575 </a></h3>
+    <form id="contact-form" method="post" action="../php/contact.php" role="form">
 
                         <div class="messages"></div>
 
@@ -136,20 +140,13 @@
                                 </div>
                             </div>
                         </div>
-
+                    </form>
+                    
 		</div>
 		</div>
+        
+        </div>
 
-<!--<form action="thankyou.php" method="post" name="contact_form">
-<p>First Name:
-<input name="first_name" type="text" /></p>
-<p>email
-<input type="text" name="email"></p>
-<p>Your message:
-<textarea name="message"></textarea></p>
-<input type="submit" name="submit" id="submit" value="Submit"/>
-
-</form>-->
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		<div class="container-fluid media-space">
 		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
@@ -201,8 +198,21 @@ function carousel() {
     setTimeout(carousel, 9000);    
 }
 </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39760164-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"> 
+  </script>
+  <script src="validator.js"></script>
+  <script src="contact.js"></script>
 	<script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -224,7 +234,8 @@ window.onclick = function(event) {
     }
   }
 }
-</script></body>
+</script>
+</body>
 		<div class="footer">
 <img src="images/top-banner-black.png" class="img-responsive top-banner">
 
